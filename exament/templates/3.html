@@ -1,0 +1,45 @@
+{% extends "1.html" %}
+{% load static %}
+{% block icon %}<link href="{% static 'imagenes/galeriaicono.png'%}" rel="icon" type="image/png"> {% endblock %}
+{% block style %} <link href="{% static 'css/estilopag3.css' %} " rel="stylesheet" type="text/css"> {% endblock %}
+    <title>{% block title %} Galeria {% endblock %}</title>
+</head>
+<body>
+    {% block content %} 
+    <div class="fotos-container">
+        <div class="foto1">
+            <img src="{% static 'imagenes/Esculturas/recicladocalamar-tapas-01.jpg' %}" title="CALAMUS ♳ PET">
+            <p>Materiales reciclados principalmente hechos de plástico, fueron recolectados para dar vida a una criatura marítima colosal como lo es la especie “Teuthida”, coloquialmente apodado Calamar. Nuestros artistas exponen al espectador ante la dualidad que existe entre las colonias de orden submarino y la principal causa de su contaminación, y porqué no, futura extinción. </p>
+        </div>
+        <div class="foto2">
+            <img src="{% static 'imagenes/Esculturas/Artur-Bordalo.jpg' %}" title="My biggest friend">
+            <p>Una obra que nace desde escombros y desechos que se han reutilizado para poder ser levantada por el autor. Nos recuerda la fragilidad de nuestros sentimientos y emociones mientras nos enternece con el recuerdo de su mejor amigo.</p>
+        </div>
+        <div class="foto3">
+            <img src="{% static 'imagenes/Esculturas/caballosdeajedrez.jpg' %}" title="Caballos Plasticos">
+            <p>Cuando ya no quede vida en esta tierra, sólo quedarán caballos de plástico.</p>
+        </div>
+        <div class="foto4">
+            <img src="{% static 'imagenes/Esculturas/s_001_re-768x384.jpg' %}" title="Mohenjo-daro">
+            <p>Con esta pieza, quisiéramos rendir homenaje a aquellas culturas ancestrales provenientes del continente asiático así como remontarnos a un objeto icono de la cultura estética, reciclando aproximadamente 41.680 botones que plasman el traje de novia tradicional del Valle del Indo, al oeste de China. </p>
+        </div>
+        <div class="foto5">
+            <img src="{% static 'imagenes/Esculturas/tsunamusic.jpg' %}" title="Tsunamusic">
+            <p>Olas de ritmo y música en una marea aplastante. Un toque de nostalgia al recordarnos la desechabilidad de la industria, nuestros artistas recolectaron diversas piezas musicales convertidas en vinilos para revivir el arte manual.</p>
+        </div>
+        <div class="foto6">
+            <img src="{% static 'imagenes/Pinturas/848cd0a3e5a89113d879c8f49552ae75.jpg' %}" title="Cosmos">
+            <p>El cosmos pareciera ser el todo, la nada, la vida. El orden y desorden en la totalidad de la existencia. El caos de lo infinito, lo que fué y será.</p>
+        </div>
+        <div class="foto7">
+            <img src="{% static 'imagenes/Pinturas/yjj5h88amlo41.jpg' %}" title="NeoSantiago">
+            <p>Esta obra sumerge a la audiencia en un Santiago futurista, avanzado y roto. La revolución de las nuevas tecnologías arrasó con todo lo que una vez conocimos como la cotidianidad para dar la bienvenida al progreso, y tú, ¿Crees que valió la pena?</p>
+        </div>
+        <div class="foto8">
+            <img src="{% static 'imagenes/Pinturas/arte-abstracto-1-e1567041620165.jpg' %}" title="AllAtOnce">
+            <p>Te ha pasado que 1, 2, 3 y ¡Pensamiento intrusivo!En ground 0 experimentamos llevando la salud mental a nuestros pinceles, ya que a nivel mundial, se calcula que 4,4% de la población sufre un trastorno depresivo y un 3,6% de trastorno por ansiedad.</p>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>

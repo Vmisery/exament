@@ -1,0 +1,37 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}">
+<script defer src="{% static 'js/navbar.js' %}"></script> 
+<header class="header">
+    <div class="container">
+        <nav class="nav fixed-top">
+            <a href="" class="logo nav-link2" aria-label="Logo de la cooperativa">
+                <img src="{% static 'imagenes/4f7f831d8b2b9be55ab2366eaaf32f77.jpeg' %}" title="logo">
+            </a>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-menu nav-menu_visible">
+                <li class="nav-menu-item">
+                    <a href="{% url 'PaginaPrincipal' %}" class="nav-menu-link nav-link2 nav-menu-link_active">Inicio</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="{% url 'Mision' %}" class="nav-menu-link nav-link2 nav-menu-link_active">Misión</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="{% url 'Galeria' %}" class="nav-menu-link nav-link2 nav-menu-link_active">Galería</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="{% url 'Formulario' %}" class="nav-menu-link nav-link2 nav-menu-link_active">Formulario</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="{% url 'Mapa' %}" class="nav-menu-link nav-link2 nav-menu-link_active">Mapa</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+
+
